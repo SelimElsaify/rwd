@@ -1,0 +1,134 @@
+/* ==================================================
+    Dektop view
+================================================== */
+@media screen and (min-width: 980px) {
+
+    /* nav styling */
+    nav ul li:nth-of-type(4) {
+        border-right: none;
+        margin-right: 70px;
+    }
+
+    nav ul li:nth-of-type(5) {
+        margin-left: 70px;
+    }
+
+    nav ul {
+        margin-top: -400px;
+    }
+
+    nav {
+        overflow: visible;
+        background-color: transparent;
+        margin-top: -80px;
+    }
+
+    header h1 {
+        background-size: 100px;
+        height: 120px;
+        margin-bottom: 40px;
+    }
+
+    /* product styling */
+    .productSlider div.product:nth-child(4),
+    .productSlider div.product:nth-child(8) {
+        display: block;
+        margin-right: 0;
+    }
+
+    .productSlider div.product:nth-child(1n+1) {
+        flex: 0 1 23%;
+    }
+
+    div.productOverlay {
+        display: block;
+        position: absolute;
+        bottom: 12px;
+        background-color: #FDB822;
+        width: 89%;
+        height: 120px;
+        border: none;
+        opacity: 0;
+        padding: 0 0 1.5rem 0;
+        transition: opacity 800ms ease-out;
+    }
+
+    .productOverlay:hover {
+        opacity: .8;
+    }
+
+    div.productOverlay p {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        line-height: .2rem;
+    }
+
+    p.productTitle, p.productPrice {
+        font-weight: 700;
+    }
+
+    .productOverlay i {
+        color: #Fdb822;
+        background-color: white;
+        margin-top: -14px;
+        margin-bottom: 12px;
+    }
+
+    .productOverlay .fa-border {
+        border: 3px solid #Fdb822;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    /* Testimonial styling */
+    .testimonial p {
+        width: 55%;
+        margin-top: 30px;
+    }
+
+    /*mainService styling */
+    .mainProducts div {
+        width: 20%;
+        margin-right: 30px;
+    }
+
+    .mainProducts div:nth-child(2) {
+        margin-right: 30px;
+    }
+
+    /* about styling */
+    .about .container {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about div {
+        width: 100%;
+    }
+
+    input[type="email"] {
+        width: 58%;
+    }
+
+    input[type="submit"] {
+        width: 40%;
+    }
+
+    .about div:nth-child(2) {
+        text-align: center;
+    }
+
+    .about img {
+        width: 40%;
+    }
+
+    /* footer styling */
+    footer .container {
+        justify-content: space-between;
+    }
+
+    footer .container div {
+        width: 20%;
+    }
+}
